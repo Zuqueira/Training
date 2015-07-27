@@ -1,3 +1,5 @@
+using ConsoleLegends.Domain.Base_Class;
+
 public class Character
 {
 
@@ -9,24 +11,29 @@ public class Character
     public int Level { get; set; }
     private Progression _progress;
 
-    public Character(int hp, int mana, int attackdamage, int abilitypower, int xp, int level, Progression progress)
+    public Character(int hp, int mana, int attackdamage, int abilitypower, Progression progress)
     {
         Hp = hp;
         Mana = mana;
         AttackDamage = attackdamage;
-        Xp = xp;
-        Level = level;
+        Xp = 0;
+        Level = 1;
         _progress = progress;
     }
 
-    //metodo de atacar
-    public void LevelUp()
+    public int Attack()
     {
+        return 0;
+    }
+
+    //metodo de atacar
+    private void LevelUp()
+    {
+        Level++;
         Hp += _progress.Hp;
         Mana += _progress.Mana;
         AttackDamage += _progress.AttackDamage;
         AbilityPower += _progress.AbilityPower;
-        Level += _progress.Level;
         //fora as outras propriedades que aumenta de nivel junto do personagem
     }
 

@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\AncientMonster.cs" />
+    <Compile Include="Domain\Aronguejo.cs" />
+    <Compile Include="Domain\Base Class\Progression.cs" />
     <Compile Include="Domain\Character.cs" />
-    <Compile Include="Domain\Progression.cs" />
+    <Compile Include="Domain\Dragon.cs" />
+    <Compile Include="Domain\Minion.cs" />
+    <Compile Include="Domain\Monster.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
